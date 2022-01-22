@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vnexpress</title>
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Add Style Css -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Add Glide Js -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+</head>
+
+<body>
+  <!-- Begin: Header -->
+  <header id="header">
+    <!-- Top header -->
+    <div class="top__header">
+      <div class="container">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v520/v2_2019/pc/graphics/logo.svg" alt="">
+          </a>
+        </div>
+
+        <span class="time__now">Thứ hai, 17/1/2022</span>
+
+        <!-- Right header -->
+        <div class="right">
+          <div class="newest__post">
+
+            <a href="#">
+              <img src="" alt="" class="far fa-clock">
+              Mới nhất
+            </a>
+          </div>
+
+          <a href="#" class="evne">International</a>
+
+          <form action="" class="search">
+            <input type="text" placeholder="Tìm kiếm">
+            <button type="submit" class="btn__search">
+              <img src="" alt="" class="fas fa-search">
+            </button>
+          </form>
+
+          <div class="login">
+            <a href=""><img src="" alt="" class="fas fa-user">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navigation -->
+    <div class="navigation">
+      <ul class="nav__list">
+        <li class="home fas fa-home"></li>
+
+        <li class="nav__parent">
+          <a href="#">Thời sự</a>
+          <ul class="nav__item">
+            <li><a href="#">Chính trị</a></li>
+            <li><a href="#">Dân sinh</a></li>
+            <li><a href="#">Giao thông</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Góc nhìn</a>
+          <ul class="nav__item">
+            <li><a href="#">Bình luận nhiều</a></li>
+            <li><a href="#">Covid 19</a></li>
+            <li><a href="#">Chính trị và chính sách</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Thế giới</a>
+          <ul class="nav__item">
+            <li><a href="#">Tư liệu</a></li>
+            <li><a href="#">Phân tích</a></li>
+            <li><a href="#">Nguời Việt 5 châu</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Video</a>
+          <ul class="nav__item">
+            <li><a href="#">Thời sự</a></li>
+            <li><a href="#">Nhịp sống</a></li>
+            <li><a href="#">Sports life</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Podcasts</a>
+          <ul class="nav__item">
+            <li><a href="#">VnExpress hôm nay</a></li>
+            <li><a href="#">Bạn ổn không?</a></li>
+            <li><a href="#">Thầm thì</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Kinh doanh</a>
+          <ul class="nav__item">
+            <li><a href="#">Quốc tế</a></li>
+            <li><a href="#">Doanh nghiệp</a></li>
+            <li><a href="#">Chứng khoán</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Khoa học</a>
+          <ul class="nav__item">
+            <li><a href="#">Khoa học trong nước</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Phát minh</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Giải trí</a>
+          <ul class="nav__item">
+            <li><a href="#">Giới sao</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Phim</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Thể thao</a>
+          <ul class="nav__item">
+            <li><a href="#">Bóng đá</a></li>
+            <li><a href="#">Lịch thi đấu</a></li>
+            <li><a href="#">Tenis</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Pháp luật</a>
+          <ul class="nav__item">
+            <li><a href="#">Hồ sơ phán án</a></li>
+            <li><a href="#">Tư vấn</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Giáo dục</a>
+          <ul class="nav__item">
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Tuyển sinh</a></li>
+            <li><a href="#">Chân dung</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Sức khoẻ</a>
+          <ul class="nav__item">
+            <li><a href="#">Dinh dưỡng</a></li>
+            <li><a href="#">Khoẻ đẹp</a></li>
+            <li><a href="#">Vaccine</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Đời sống</a>
+          <ul class="nav__item">
+            <li><a href="#">Tổ ấm</a></li>
+            <li><a href="#">Nhà</a></li>
+            <li><a href="#">Cooking</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Du lịch</a>
+          <ul class="nav__item">
+            <li><a href="#">Điểm đến</a></li>
+            <li><a href="#">Ẩm thực</a></li>
+            <li><a href="#">Ăn và chơi</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Số hoá</a>
+          <ul class="nav__item">
+            <li><a href="#">Công nghệ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Tech Awards 2021</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Xe</a>
+          <ul class="nav__item">
+            <li><a href="#">Bảng giá ô tô</a></li>
+            <li><a href="#">Xe điện</a></li>
+            <li><a href="#">Thi bằng lái</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__parent">
+          <a href="#">Tâm sự</a>
+          <ul class="nav__item">
+            <li><a href="#">Chuyên gia gỡ rối</a></li>
+            <li><a href="#">Hẹn hò</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__menu">
+          <a class="nav__open" href="">Tất cả<img src="" alt="" class="fa fa-bars"></a>
+
+          <!-- Begin: Menu category -->
+          <div class="menu__category">
+            <div class="container">
+              <div class="menu__header">
+                <span>Tất cả chuyên mục</span>
+                <button class="btn__close-menu">Đóng X</button>
+              </div>
+
+              <!-- Menu left -->
+              <ul class="menu__left">
+                <li class="menu__parent">
+                  <a href="#">Thời sự</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Chính trị</a></li>
+                    <li><a href="#">Dân sinh</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li><a href="#">Mekong</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Góc nhìn</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Bình luận nhiều</a></li>
+                    <li><a href="#">Covid 19</a></li>
+                    <li><a href="#">Chính trị và chính sách</a></li>
+                    <li><a href="#">Y tế và sức khoẻ</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Thế giới</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Tư liệu</a></li>
+                    <li><a href="#">Phân tích</a></li>
+                    <li><a href="#">Nguời Việt 5 châu</a></li>
+                    <li><a href="#">Cuộc sống đó đây</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Video</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Thời sự</a></li>
+                    <li><a href="#">Nhịp sống</a></li>
+                    <li><a href="#">Sports life</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Podcasts</a>
+                  <ul class="menu__item">
+                    <li><a href="#">VnExpress hôm nay</a></li>
+                    <li><a href="#">Bạn ổn không?</a></li>
+                    <li><a href="#">Thầm thì</a></li>
+                    <li><a href="#">Điểm tin</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Kinh doanh</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Quốc tế</a></li>
+                    <li><a href="#">Doanh nghiệp</a></li>
+                    <li><a href="#">Chứng khoán</a></li>
+                    <li><a href="#">Bất động sản</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!--  Menu lef 2 -->
+              <ul class="menu__left-2">
+                <li class="menu__parent">
+                  <a href="#">Thời sự</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Chính trị</a></li>
+                    <li><a href="#">Dân sinh</a></li>
+                    <li><a href="#">Giao thông</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Góc nhìn</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Bình luận nhiều</a></li>
+                    <li><a href="#">Covid 19</a></li>
+                    <li><a href="#">Chính trị và chính sách</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Thế giới</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Tư liệu</a></li>
+                    <li><a href="#">Phân tích</a></li>
+                    <li><a href="#">Nguời Việt 5 châu</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Video</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Thời sự</a></li>
+                    <li><a href="#">Nhịp sống</a></li>
+                    <li><a href="#">Sports life</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Podcasts</a>
+                  <ul class="menu__item">
+                    <li><a href="#">VnExpress hôm nay</a></li>
+                    <li><a href="#">Bạn ổn không?</a></li>
+                    <li><a href="#">Thầm thì</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu__parent">
+                  <a href="#">Kinh doanh</a>
+                  <ul class="menu__item">
+                    <li><a href="#">Quốc tế</a></li>
+                    <li><a href="#">Doanh nghiệp</a></li>
+                    <li><a href="#">Chứng khoán</a></li>
+                    <li class="view__more"><a href="#">Xem thêm</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Menu right -->
+              <div class="menu__right">
+                <ul class="menu__item">
+                  <li><a href="#">Nghe Podcasts</a></li>
+                  <li><a href="#">Ảnh</a></li>
+                  <li><a href="#">Infographic</a></li>
+                  <li class="view__more-2"></li>
+                </ul>
+
+                <ul class="menu__item">
+                  <li><a href="#">Mới nhất</a></li>
+                  <li><a href="#">Xem nhiều</a></li>
+                  <li><a href="#">Tin nóng</a></li>
+                  <li class="view__more-2"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End: Menu category -->
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- End: Header -->
+
+  <div id="main">
+    <div class="content">
+      <!-- Begin: Lastest post -->
+      <div class="lastest__post">
+        <!-- Column left -->
+        <div class="col__left">
+          <a href="">
+            <img
+              src="https://i1-kinhdoanh.vnecdn.net/2022/01/17/settop1-1642364646-3358-1642364849.jpg?w=680&h=408&q=100&dpr=2&fit=crop&s=J_Bbr7ydVLtsPJ1kPYFOqw"
+              alt="">
+          </a>
+
+          <div class="col__left-wrapper">
+            <div class="col__left-1">
+              <h2><a href="">Luật sư: Khóa cổng nhà có người về quê đón Tết là sai luật</a></h2>
+              <span>
+                <a href="">HÀ NỘI - Luật sư Trương Anh Tú cho rằng dù các hộ dân đồng ý, việc ủy ban xã cho người khóa
+                  cổng
+                  và giữ chìa để phòng Covid-19 là "vi phạm quyền tự do đi lại, cư trú".</a>
+              </span>
+            </div>
+
+            <div class="col__left-2">
+              <h2><a href="">Lần đầu TP HCM ghi nhận ca Covid tử vong dưới 10 người một ngày</a></h2>
+              <span><a href="">Thành phố ghi nhận 9 bệnh nhân Covid-19 tử vong trong ngày 16/1, bên cạnh 6 trường hợp
+                  chuyển từ tỉnh, thành khác đến.</a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column mid -->
+        <div class="col__mid">
+          <div class="col__mid-wrapper">
+            <div class="top__mid">
+              <h1><a href="">Tỷ phú Phạm Nhật Vượng: ‘Làm việc khó mới thú vị’</a></h1>
+              <span>
+                <a href="">Xuất hiện sau 2 năm kín tiếng, ông Phạm Nhật Vượng chia sẻ với VnExpress về quyết định dừng
+                  xe xăng và những tham vọng khiến nhiều người đặt câu hỏi "Vingroup có 'too big to fail'".
+                </a>
+              </span>
+              <h3><a href="">Kinh doanh </a><img src="" alt="" class="far fa-comments"> 216</h3>
+            </div>
+
+            <div class="bottom__mid">
+              <div class="bottom__mid-content">
+                <a href="">Góc nhìn</a>
+                <h2>Bỏ cọc đất</h2>
+                <span>
+                  Tôi không quá ngạc nhiên khi nghe tin bên mua bỏ cọc lô đất đã đấu giá ở Thủ Thiêm.
+                </span>
+
+                <div class="bottom__mid-user">
+                  <div class="user__info">
+                    <div class="user__name">
+                      <h3>Cấn Văn Lực</h3>
+                    </div>
+
+                    <div class=user__comment>
+                      <span class="far fa-comments"></span> 19
+                    </div>
+                  </div>
+
+                  <div class="user__avatar">
+                    <img
+                      src="https://i1-vnexpress.vnecdn.net/2017/08/17/canvalucpng-1502906277.png?w=100&h=100&q=100&dpr=2&fit=crop&s=-nnsY7YRIXfwQLZjZBfXAg"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column right -->
+        <div class="col__right">
+          <div class="col__right-top">
+            <a href=""><img src="https://anresidence.vn/wp-content/uploads/2021/12/AR_EMAGAZINE-10-1.png" alt=""></a>
+            <h3>Ngay khu công nghiệp VSIP1
+              <br>
+              Cách AEON MALL 5 phút
+              Mặt tiền đường Thuận An Hòa (lộ giới 19m)
+              Ngay chợ, công viên, trường học, bệnh viện
+              Trong khu dân cư sầm uất, hiện hữu
+            </h3>
+          </div>
+
+          <div class="col__right-bottom">
+
+          </div>
+        </div>
+      </div>
+      <!-- End: Lastest post -->
+
+      <!-- Begin: Technology -->
+      <div class="technology">
+        <div class="technology__titles">
+          <h1><a href="">Số hoá</a></h1>
+          <p><a href="">Công nghệ</a></p>
+          <p><a href="">Sản phẩm</a></p>
+          <p><a href="">Tech Awards 2021</a></p>
+        </div>
+
+        <div class="technology__content">
+          <!-- Content left -->
+          <div class="technology__content-left">
+            <a href="">
+              <img
+                src="https://i1-sohoa.vnecdn.net/2022/01/18/im-468246-jpeg-1642474839-6310-1642475123.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=NiDvyHxbLD5JiQo1NhWrAQ"
+                alt="">
+            </a>
+            <h3>
+              <a href="">Cuộc chiến tỷ USD thống trị cáp quang biển</a>
+            </h3>
+            <p>
+              <a href="">Các hãng công nghệ lớn như Google, Meta, Microsoft đang chi hàng chục tỷ USD xây cáp quang biển
+                - hệ thống huyết mạch kết nối Internet toàn cầu.</a>
+            </p>
+          </div>
+
+          <!-- Content middle -->
+          <div class="technology__content-middle">
+            <div class="item-1">
+              <a href=""><img
+                  src="https://i1-sohoa.vnecdn.net/2022/01/17/magicleapar-1642432459-1853-1642432844.png?w=380&h=228&q=100&dpr=2&fit=crop&s=o8JW9w7ELvYrQfgDjQ5Idw"
+                  alt="">
+              </a>
+              <h3><a href="">Vũ trụ ảo đang tạo ra việc làm thật</a></h3>
+            </div>
+
+            <div class="item-2">
+              <a href=""><img
+                  src="https://i1-sohoa.vnecdn.net/2022/01/17/00nftgamers3jumbocopy-16424141-3099-5101-1642414205.jpg?w=380&h=228&q=100&dpr=2&fit=crop&s=b00nEIvp1sPhRsNYLXj42A"
+                  alt="">
+              </a>
+              <h3><a href="">Game thủ nổi giận khi bị biến thành nhà đầu tư</a></h3>
+            </div>
+          </div>
+
+          <!-- Content right -->
+          <div class="technology__content-right">
+            <div class="item-1">
+              <h2><a href="">Apple gặp rắc rối với sạc iPhone</a></h2>
+              <a href=""><img
+                  src="https://i1-sohoa.vnecdn.net/2022/01/17/Sac-iPhone-jpeg-8481-1642430409.jpg?w=120&h=72&q=100&dpr=2&fit=crop&s=Cfb2VJty5QUywPb8AMdpiw"
+                  alt=""></a>
+            </div>
+
+            <div class="item-2">
+              <h2><a href="">Hoài nghi về laptop màn hình gập dẻo</a></h2>
+              <a href=""><img
+                  src="https://i1-sohoa.vnecdn.net/2022/01/17/f97bd091f7762aa0fd690cd8a41181-7249-4209-1642412128.jpg?w=120&h=72&q=100&dpr=2&fit=crop&s=WvxeB1gRF93QI8M8EMoxTw"
+                  alt=""></a>
+            </div>
+
+            <div class="item-3">
+              <h2><a href="">iPhone 13 Pro Max giảm còn dưới 30 triệu đồng</a></h2>
+              <a href=""><img
+                  src="https://i1-sohoa.vnecdn.net/2022/01/17/iphone13promaxvnexpress-164241-6068-9639-1642413022.jpg?w=120&h=72&q=100&dpr=2&fit=crop&s=Oz0qhmWhRl9ozL7fP2APiw"
+                  alt=""></a>
+            </div>
+
+            <div class="item-4">
+              <h2><a href="">Sự thật ẩn sau các giao dịch điện tử</a></h2>
+              <a href=""><img
+                  src="https://i1-sohoa.vnecdn.net/2022/01/17/screen-shot-2022-01-17-at-11-5-1727-2532-1642395425.png?w=120&h=72&q=100&dpr=2&fit=crop&s=xixOAcRN6nPMbmmoPmRJBA"
+                  alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End: Technology -->
+
+      <!-- Begin: Hero -->
+      <div class="hero">
+        <div class="hero__title">
+          <h1>Đời sống</h1>
+        </div>
+
+        <div class="glide" id="glide_1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <!-- Item 1 -->
+              <li class="glide__slide">
+                <div class="hero__center">
+                  <div class="hero__left">
+                    <div class="hero__img-container">
+                      <img
+                        src="https://i1-giadinh.vnecdn.net/2022/01/17/z3097169189936-d04d1272ed2a95d1bff1709e8b7dd455-1642386008.jpg?w=900&h=540&q=100&dpr=2&fit=crop&s=Ua-YTVjs8yFpU873b8pjZw"
+                        alt="" class="banner_01">
+                    </div>
+                  </div>
+
+                  <div class="hero__right">
+                    <h1>'Bầu trời sao' trong căn hộ ở Sài Gòn</h1>
+                    <p>Phần trần sơn màu tối với hơn 1.000 bóng đèn tạo cảm giác như một bầu trời sao giữa căn hộ.</p>
+                    <a href=""><button class="hero__btn">Xem bài viết</button></a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Item 2 -->
+              <li class="glide__slide">
+                <div class="hero__center">
+                  <div class="hero__left">
+                    <div class="hero__img-container">
+                      <img
+                        src="https://i1-vnexpress.vnecdn.net/2022/01/17/cho-rau-ve-1642381580-1642383601.jpg?w=900&h=540&q=100&dpr=2&fit=crop&s=x5Oty6rwyVrn8WvBUe0kpQ"
+                        alt="" class="banner_02">
+                    </div>
+                  </div>
+
+                  <div class="hero__right">
+                    <h1>Sống 'du mục' ở bãi bồi giữa sông Trà Khúc</h1>
+                    <p>Người dân chèo thuyền ra bãi bồi hơn 100 ha nơi sông Trà Khúc giao với biển để trồng hoa màu,
+                      nuôi vịt, bò...</p>
+                    <a href=""><button class="hero__btn">Xem bài viết</button></a>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Item 3 -->
+              <li class="glide__slide">
+                <div class="hero__center">
+                  <div class="hero__left">
+                    <div class="hero__img-container">
+                      <img
+                        src="https://i1-vnexpress.vnecdn.net/2022/01/17/quyn6044-1642395148-1642400966.jpg?w=900&h=540&q=100&dpr=2&fit=crop&s=kBMpCqHZ2DO2B2ET_n-NTQ"
+                        alt="" class="banner_02">
+                    </div>
+                  </div>
+
+                  <div class="hero__right">
+                    <h1>Quán cà phê mô hình tàu điện ngầm</h1>
+                    <p>Tầng trệt của quán cà phê ở quận Phú Nhuận trang trí như một toa tàu điện ngầm, thu hút nhiều bạn
+                      trẻ tới check in.</p>
+                    <a href=""><button class="hero__btn">Xem bài viết</button></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <img src="" alt="" class="fas fa-arrow-left">
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <img src="" alt="" class="fas fa-arrow-right">
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <!-- End: Hero -->
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="content">
+        <!-- List item left -->
+        <div class="list__item-left">
+          <ul class="item-1">
+            <li><a href="#">Trang chủ</a>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Podcasts</a></li>
+            <li><a href="#">Ảnh</a></li>
+            <li><a href="#">Mới nhất</a></li>
+            <li><a href="#">Xem nhiều</a></li>
+            <li><a href="#">Tin nóng</a></li>
+            </li>
+          </ul>
+
+          <ul class="item-2">
+            <li><a href="#">Thời sự</a>
+            <li><a href="#">Góc nhìn</a>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Kinh doanh</a></li>
+            <li><a href="#">Giải trí</a></li>
+            </li>
+          </ul>
+
+          <ul class="item-3">
+            <li><a href="#">Thể thao</a>
+            <li><a href="#">Pháp luật</a></li>
+            <li><a href="#">Giáo dục</a></li>
+            <li><a href="#">Sức khoẻ</a></li>
+            <li><a href="#">Đời sống</a></li>
+            <li><a href="#">Du lịch</a></li>
+            </li>
+          </ul>
+
+          <ul class="item-4">
+            <li><a href="#">Khoa học</a>
+            <li><a href="#">Số hoá</a></li>
+            <li><a href="#">Xe</a></li>
+            <li><a href="#">Ý kiến</a></li>
+            <li><a href="#">Tâm sự</a></li>
+            <li><a href="#">Hài</a></li>
+            </li>
+          </ul>
+
+          <ul class="item-5">
+            <li><a href="#">Rao vặt</a>
+            <li><a href="#">Shop VnExpress</a></li>
+            <li><a href="#">Start up</a></li>
+            <li><a href="#">Mua ảnh VnExpress</a></li>
+            <li><a href="#">eBox</a></li>
+            </li>
+          </ul>
+        </div>
+
+        <!-- List item right -->
+        <div class="list__item-right">
+          <ul class="item-1">
+            <li>
+              <a href="#">Tải ứng dụng</a>
+              <div class="download__app">
+                <button class="btn__app-1">VnExpress</button>
+                <button class="btn__app-2">International</button>
+              </div>
+            </li>
+
+            <li>
+              <a href="#">Liên hệ</a>
+              <div class="contact__list">
+                <img class="fas fa-ad">
+                <span><img src="" alt="" class="fas fa-envelope">Toà soạn</span>
+                <span><img src="" alt="" class="fas fa-external-link-square-alt">Quảng cáo</span>
+                <span><img src="" alt="" class="fas fa-users">Hợp tác bản quyền</span>
+              </div>
+              <span class="contact__list-border"></span>
+            </li>
+
+            <li>
+              <a href="#" class="phone__number-list">Đường dây nóng</a>
+              <div class="phone__number-1">
+                <h4>083.888.0123</h4>
+                <h4>082.233.3555</h4>
+              </div>
+              <div class="phone__number-2">
+                <p>(Hà Nội)</p>
+                <p>(Hồ Chí Minh)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="list__item-bottom">
+          <div class="bottom__item-1">
+            <div class="item__logo">
+              <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v522/v2_2019/pc/graphics/logo.svg" alt="">
+            </div>
+
+            <div class="item__follow">
+              <a href="">RSS</a>
+              <span>Theo dõi VnExpress trên</span>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="bottom__item-2">
+            <div class="list__item-1">
+              <h4>Báo tiếng Việt nhiều người xem nhất</h4>
+              <span>Thuộc Bộ Khoa học Công nghệ</span>
+              <p>Số giấy phép: 548/GP-BTTTT ngày 24/08/2021</p>
+            </div>
+
+            <div class="list__item-2">
+              <p>Phó Tổng Biên tập phụ trách: Phạm Hiếu</p>
+              <p>Địa chỉ: Tầng 5, Tòa nhà FPT, 17 phố Duy Tân, Cầu Giấy, Hà Nội</p>
+              <p>Điện thoại: 024 7300 8899 - máy lẻ 4500</p>
+            </div>
+
+            <div class="list__item-3">
+              <p>© 1997-2022. Toàn bộ bản quyền thuộc VnExpress</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#header" class="goto__top">
+    <div class="goto__top-icon">
+      <img= class="fas fa-arrow-up">
+    </div>
+  </a>
+
+  <!-- Add main.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/slider.js"></script>
+</body>
+
+</html>
